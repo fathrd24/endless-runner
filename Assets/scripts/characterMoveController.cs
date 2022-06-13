@@ -52,11 +52,14 @@ public class characterMoveController : MonoBehaviour
     }
 
     private Animator anim;
+    private charactersoundscontroll sound;
     // Start is called before the first frame update
     private void Start()
     {
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        sound = GetComponent<charactersoundscontroll>();
+        
     }
     private void OnDrawGizmos()
     {
@@ -73,6 +76,7 @@ public class characterMoveController : MonoBehaviour
             if(isOnGround)
             {
                 isjumping = true;
+                sound.Playjump();
             }
         }
         anim.SetBool("isOnGround", isOnGround);
