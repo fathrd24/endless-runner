@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 619862308}
   - component: {fileID: 619862307}
   - component: {fileID: 619862309}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: platformPack_tilesheet@2_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -326,7 +326,7 @@ GameObject:
   - component: {fileID: 761678618}
   - component: {fileID: 761678617}
   - component: {fileID: 761678619}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: platformPack_tilesheet@2_0 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -432,7 +432,7 @@ GameObject:
   - component: {fileID: 796771914}
   - component: {fileID: 796771913}
   - component: {fileID: 796771915}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: platformPack_tilesheet@2_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -538,7 +538,7 @@ GameObject:
   - component: {fileID: 1102444768}
   - component: {fileID: 1102444767}
   - component: {fileID: 1102444769}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: platformPack_tilesheet@2_0 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -644,7 +644,7 @@ GameObject:
   - component: {fileID: 1258952349}
   - component: {fileID: 1258952348}
   - component: {fileID: 1258952350}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: platformPack_tilesheet@2_0 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -750,7 +750,7 @@ GameObject:
   - component: {fileID: 1274705160}
   - component: {fileID: 1274705159}
   - component: {fileID: 1274705161}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: platformPack_tilesheet@2_0 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -856,7 +856,7 @@ GameObject:
   - component: {fileID: 1309396208}
   - component: {fileID: 1309396207}
   - component: {fileID: 1309396209}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: platformPack_tilesheet@2_0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -962,7 +962,7 @@ GameObject:
   - component: {fileID: 1493900889}
   - component: {fileID: 1493900888}
   - component: {fileID: 1493900890}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: platformPack_tilesheet@2_0 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1219,7 +1219,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveAccel: 2
-  MaxSpeed: 0
+  MaxSpeed: 2
+  jumpAccel: 7
+  groundRaycastDistance: 12
+  groundLayerMask:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &1735992701
 GameObject:
   m_ObjectHideFlags: 0
@@ -1231,7 +1236,7 @@ GameObject:
   - component: {fileID: 1735992703}
   - component: {fileID: 1735992702}
   - component: {fileID: 1735992704}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: platformPack_tilesheet@2_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1337,7 +1342,7 @@ GameObject:
   - component: {fileID: 1905586863}
   - component: {fileID: 1905586862}
   - component: {fileID: 1905586864}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: platformPack_tilesheet@2_0 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1443,7 +1448,7 @@ GameObject:
   - component: {fileID: 1945627386}
   - component: {fileID: 1945627385}
   - component: {fileID: 1945627387}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: platformPack_tilesheet@2_0 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
