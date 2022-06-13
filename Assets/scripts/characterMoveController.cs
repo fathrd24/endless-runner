@@ -51,11 +51,12 @@ public class characterMoveController : MonoBehaviour
         rig.velocity = velocityVector;
     }
 
-
+    private Animator anim;
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         rig = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
     private void OnDrawGizmos()
     {
@@ -65,7 +66,7 @@ public class characterMoveController : MonoBehaviour
 
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
@@ -74,6 +75,7 @@ public class characterMoveController : MonoBehaviour
                 isjumping = true;
             }
         }
+        anim.SetBool("isOnGround", isOnGround);
         
     }
 }
